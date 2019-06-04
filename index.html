@@ -1,0 +1,29 @@
+<html>
+	<head></head>
+	<body>
+		
+	<div style="background-image: url(bg.jpg); height:1000px; background-size: 100% 100%;"></div>		
+	<img style="width:100px; margin-left: 100px;" src="	" alt="">
+	<script type="text/javascript">
+			
+	let Yan = function(){
+			let rand = Math.random()*1000
+			let round = Math.round(rand)
+
+			let muravey = document.createElement('img');
+			document.body.appendChild(muravey);
+			muravey.src= "img.svg";
+			muravey.style.height = "50px";
+			muravey.style.width = "50px";
+			muravey.style.marginLeft = round+"px";
+			muravey.style.position = "absolute";
+			muravey.style.marginTop = round+"px";
+			muravey.style.marginRight= round+"px"
+	}
+
+	setInterval(Yan,1000)
+
+	
+	</script>	
+	</body>
+</html>
